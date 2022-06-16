@@ -1,0 +1,11 @@
+# ignore vendor
+node_modules/
+
+# ignore taskmanager
+gulpfile.babel.js
+
+# ignore source
+src/js/*.min.js
+
+# ignore build
+build/

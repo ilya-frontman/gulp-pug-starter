@@ -1,0 +1,83 @@
+{
+  "name": "gulp-pug-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gulp starter with Pug(Jade)",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development gulp watch",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "clean": "rm -rf build",
+    "prepare": "husky install",
+    "stylelint": "stylelint \"src/scss/**/*.scss\"",
+    "eslint": "eslint \"src/js/**/*.js\"",
+    "puglint": "pug-lint \"src/pug\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "husky check branch not main and develop"
+    }
+  },
+  "keywords": [
+    "pug",
+    "gulp",
+    "linters",
+    "husksy",
+    "compress",
+    "js",
+    "sass",
+    "prettier"
+  ],
+  "author": "ilya frontman",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/register": "^7.17.7",
+    "@zoxon/emitty": "^1.4.2",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.27.10",
+    "browserify": "^17.0.0",
+    "clean": "^4.0.2",
+    "cross-env": "^7.0.3",
+    "del": "^6.1.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-changed": "^4.0.3",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-uglify-es": "^3.0.0",
+    "husky": "^8.0.1",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-webp": "^6.0.0",
+    "lint-staged": "^13.0.1",
+    "prettier": "^2.7.0",
+    "pug-include-glob": "^0.4.3",
+    "pug-lint": "^2.6.0",
+    "sass": "^1.52.3",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

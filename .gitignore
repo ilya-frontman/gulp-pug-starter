@@ -1,0 +1,11 @@
+# vendor
+node_modules/
+
+# env
+package-lock.json
+
+# build
+build/
+
+# ide
+.vscode/
