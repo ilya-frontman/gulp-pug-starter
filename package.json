@@ -47,6 +47,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "glob": "^8.0.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-changed": "^4.0.3",
@@ -66,6 +67,7 @@
     "imagemin-pngquant": "^9.0.2",
     "imagemin-webp": "^6.0.0",
     "lint-staged": "^13.0.1",
+    "merge-stream": "^2.0.0",
     "prettier": "^2.7.0",
     "pug-include-glob": "^0.4.3",
     "pug-lint": "^2.6.0",
@@ -78,6 +80,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "vanilla-lazyload": "^17.8.2"
   }
 }
