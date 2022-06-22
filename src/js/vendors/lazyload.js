@@ -1,3 +1,8 @@
-import 'vanilla-lazyload/dist/lazyload.min';
+import LazyLoad from 'vanilla-lazyload';
 
-console.log('vendor script lazyload includes in head');
+const lazy = new LazyLoad({
+  elements_selector: '.lazy',
+  use_native: true,
+});
+
+lazy.update();
