@@ -27,7 +27,7 @@ const copyImages = () =>
 const convertImagesToWebp = () =>
   gulp
     .src(`${config.src.images}/**/*.{jpg,png}`)
-    .pipe(changed(config.dest.images), { extension: '.webp' })
+    .pipe(changed(config.dest.images, { extension: '.webp' }))
     .pipe(imagemin([imageminWebp({ quality: 80 })]))
     .pipe(
       rename({
