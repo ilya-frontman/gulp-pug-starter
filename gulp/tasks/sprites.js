@@ -18,7 +18,7 @@ const spriteMono = () =>
               svgo: {
                 plugins: [
                   {
-                    name: 'preset-default,
+                    name: 'preset-default',
                     /*removeAttrs: {
                       attrs: ['class', 'data-name', 'fill.*', 'stroke.*'],
                     },*/
