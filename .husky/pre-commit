@@ -13,4 +13,4 @@ fi
 
 echo -e ">> Finish checking branch name\n==="
 
-lint-staged
+npx lint-staged
