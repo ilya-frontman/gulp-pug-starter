@@ -18,10 +18,12 @@ const spriteMono = () =>
               svgo: {
                 plugins: [
                   {
-                    name: 'preset-default',
-                    /*removeAttrs: {
-                      attrs: ['class', 'data-name', 'fill.*', 'stroke.*'],
-                    },*/
+                    name:'preset-default',
+                    params: {
+                      overrides: {
+                        cleanupIDs: false
+                      }
+                    }
                   },
                 ],
               },
@@ -48,19 +50,13 @@ const spriteMulti = () =>
               svgo: {
                 plugins: [
                   {
-                    name: 'preset-default',
+                    name:'preset-default',
+                    params: {
+                      overrides: {
+                        cleanupIDs: false
+                      }
+                    }
                   },
-                  /*{
-                    removeAttrs: {
-                      attrs: ['class', 'data-name'],
-                    },
-                  },
-                  {
-                    removeUselessStrokeAndFill: false,
-                  },
-                  {
-                    inlineStyles: true,
-                  },*/
                 ],
               },
             },
